@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewViewController" customModule="MovieReviewReader" customModuleProvider="target">
+            <connections>
+                <outlet property="commentTextView" destination="c56-QL-xjS" id="e5H-KU-hxX"/>
+                <outlet property="linkButton" destination="ouT-bA-lPY" id="P9z-uj-rdk"/>
+                <outlet property="movieImageView" destination="LPX-92-z2B" id="OuB-Y7-EGm"/>
+                <outlet property="movieTitleLabel" destination="3GQ-zu-DcW" id="Vca-zc-3nx"/>
+                <outlet property="removeButton" destination="Q6c-kk-DZ1" id="8PN-wP-Whg"/>
+                <outlet property="reviewAuthorLabel" destination="Qzd-VQ-PCJ" id="6my-6R-Vq9"/>
+                <outlet property="reviewDateLabel" destination="Jp5-lI-Uw7" id="ehE-Oo-KVx"/>
+                <outlet property="saveEditButton" destination="1AI-Fw-UH8" id="inD-Ow-hGv"/>
+                <outlet property="summaryLabel" destination="Smm-L3-3DM" id="ICv-Bu-ToK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LPX-92-z2B">
+                    <rect key="frame" x="53" y="70" width="270" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="Nt5-zH-IQv"/>
+                        <constraint firstAttribute="width" constant="270" id="pUo-FS-X7I"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3GQ-zu-DcW">
+                    <rect key="frame" x="167" y="275" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jp5-lI-Uw7">
+                    <rect key="frame" x="242" y="323" width="81" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="cVa-6Q-gzA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-VQ-PCJ">
+                    <rect key="frame" x="53" y="323" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="QLk-mK-yEX" userLabel="width = 150"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-L3-3DM">
+                    <rect key="frame" x="53" y="364" width="270" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ouT-bA-lPY">
+                    <rect key="frame" x="53" y="617" width="270" height="30"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="openWebView:" destination="-1" eventType="touchUpInside" id="eoa-uO-Btb"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c56-QL-xjS">
+                    <rect key="frame" x="53" y="497" width="270" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AI-Fw-UH8">
+                    <rect key="frame" x="53" y="566" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="saveOrEdit:" destination="-1" eventType="touchUpInside" id="xa8-G3-HvW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-kk-DZ1">
+                    <rect key="frame" x="118" y="566" width="69" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="removeComment:" destination="-1" eventType="touchUpInside" id="lff-o2-Nt0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LPX-92-z2B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="03P-4D-pOk"/>
+                <constraint firstItem="ouT-bA-lPY" firstAttribute="width" secondItem="LPX-92-z2B" secondAttribute="width" id="5OP-Ne-0tK"/>
+                <constraint firstItem="3GQ-zu-DcW" firstAttribute="centerX" secondItem="LPX-92-z2B" secondAttribute="centerX" id="CBF-Ff-foe"/>
+                <constraint firstItem="Qzd-VQ-PCJ" firstAttribute="height" secondItem="Jp5-lI-Uw7" secondAttribute="height" id="D5u-zf-H7h"/>
+                <constraint firstItem="Smm-L3-3DM" firstAttribute="centerX" secondItem="LPX-92-z2B" secondAttribute="centerX" id="NRM-ev-8pX"/>
+                <constraint firstItem="Smm-L3-3DM" firstAttribute="width" secondItem="LPX-92-z2B" secondAttribute="width" id="PTP-rh-8vZ"/>
+                <constraint firstItem="LPX-92-z2B" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rn4-Ju-h33"/>
+                <constraint firstItem="Qzd-VQ-PCJ" firstAttribute="leading" secondItem="LPX-92-z2B" secondAttribute="leading" id="i9h-nN-pir"/>
+                <constraint firstItem="ouT-bA-lPY" firstAttribute="centerX" secondItem="LPX-92-z2B" secondAttribute="centerX" id="mJy-ys-JUl"/>
+                <constraint firstItem="Smm-L3-3DM" firstAttribute="top" secondItem="LPX-92-z2B" secondAttribute="top" constant="294" id="qHD-59-tIg"/>
+                <constraint firstItem="Jp5-lI-Uw7" firstAttribute="top" secondItem="LPX-92-z2B" secondAttribute="bottom" constant="73" id="rLL-Pw-CNE"/>
+                <constraint firstItem="3GQ-zu-DcW" firstAttribute="top" secondItem="LPX-92-z2B" secondAttribute="bottom" constant="25" id="u0w-Vp-X68"/>
+                <constraint firstItem="Jp5-lI-Uw7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="242" id="uKQ-FX-koq"/>
+                <constraint firstAttribute="bottom" secondItem="ouT-bA-lPY" secondAttribute="bottom" constant="20" id="xgr-Zs-9z3"/>
+                <constraint firstItem="Jp5-lI-Uw7" firstAttribute="trailing" secondItem="LPX-92-z2B" secondAttribute="trailing" id="y11-dv-qqp"/>
+                <constraint firstItem="Qzd-VQ-PCJ" firstAttribute="top" secondItem="Jp5-lI-Uw7" secondAttribute="bottom" constant="-21" id="yIw-6M-P0e"/>
+            </constraints>
+            <point key="canvasLocation" x="106.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
